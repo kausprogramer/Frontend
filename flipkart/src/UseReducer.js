@@ -54,6 +54,7 @@ const UseReducer = () => {
         <ul>
             {state.data.map((item)=>{
                 return <li key = {item.id}>
+
                     {item.title}
                     <button onClick={() => handleDelete(item.id)}>Delete</button>
                 </li>
